@@ -1,0 +1,301 @@
+/* ---------- Allmänna stilsättningar ---------- */
+
+/* Användning av Google Fonts för huvudtexten och rubrikerna */
+body {
+    font-family: 'Barlow', sans-serif;
+    background-image: url(pastell.png); /* Bakgrundsbild för sidan */
+}
+
+/* Rubrikerna har en annan font för att sticka ut */
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Centrera den översta rubriken */
+h1 {
+    text-align: center;
+}
+
+/* ---------- Stilsättning för personlig information ---------- */
+
+/* Anpassa storlek, form och skugga för en personlig bild */
+#PersonalInfo img {
+    max-width: 20%; /* Säkerställer att bilden inte blir bredare än dess förälderelement */
+    height: auto; /* Bibehåll proportionerna när bredden justeras */
+    border-radius: 2%; /* Gör bilden rund med hjälp av border-radius */
+    box-shadow: 0 0 40px rgba(223, 92, 190, 0.5); /* Lägg till en skugga för stil */
+    margin-bottom: 10px; /* Lägg till lite mellanrum under bilden */
+    display: block; /* Gör bilden till ett blockelement för att undvika oväntade layoutproblem */
+    margin-left: auto; /* Centrera bilden horisontellt */
+    margin-right: auto; /* Centrera bilden horisontellt */
+}
+
+/* Centrera huvudrubriken för personlig information */
+#PersonalInfo h4 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ---------- Stilsättning för navigeringsknappar ---------- */
+
+/* Färg och stil för länkar i navigeringsknapparna */
+#button li a:link,
+#button li a:visited {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+/* Förändra färgen när en länk är aktiv */
+#button li a:active {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Listan <UL> med knapparna */
+#button ul {
+    clear: both;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 36, 163);
+    background: linear-gradient(45deg, rgb(245, 188, 233), rgb(217, 151, 255)); 
+    display: flex;
+    flex-wrap: wrap; /* Wrap för att få till en radbrytning om det inte finns plats */
+    justify-content: center; /* Centrera elementen horisontellt */
+    align-items: center; /* Centrera elementen vertikalt */
+}
+
+/* Knappen */
+#button li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 8px 20px 8px 20px;
+    text-align: center;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#button li:hover {
+    cursor: pointer;
+    /* Flera gradienter för olika webbläsare */
+    /* Safari, iOS, Android */
+    background: -webkit-linear-gradient(top, 
+    rgb(208, 136, 250) 0%, 
+    rgb(224, 187, 255) 50%, 
+    rgb(232, 187, 253) 50%, 
+    rgb(208, 136, 250) 100%);
+    /* Internet Explorer */
+    background: -ms-linear-gradient(top, 
+    rgb(208, 136, 250) 0%, 
+    rgb(224, 187, 255) 50%, 
+    rgb(232, 187, 253) 50%, 
+    rgb(208, 136, 250) 100%);
+    /* Mozilla Firefox */
+    background: -moz-linear-gradient(top, 
+    rgb(208, 136, 250) 0%, 
+    rgb(224, 187, 255) 50%, 
+    rgb(232, 187, 253) 50%, 
+    rgb(208, 136, 250) 100%);
+    /* W3C standard specification */
+    background: linear-gradient(top, 
+    rgb(208, 136, 250) 0%, 
+    rgb(224, 187, 255) 50%, 
+    rgb(232, 187, 253) 50%, 
+    rgb(208, 136, 250) 100%);
+}
+
+/* ---------- Stilsättning för sektioner och fotern ---------- */
+
+/* Generell stilsättning för sektioner på sidan */
+section {
+    margin: 20px;
+    background-color: rgb(220, 186, 243); /* Använd solid färg utan transparens */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilsättning för sidans footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-color:  rgb(248, 181, 230); */
+    background: linear-gradient(45deg, rgb(245, 188, 233), rgb(217, 151, 255));  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(15, 0, 13);
+    text-align: center;
+    padding: 5px;
+}
+
+/* Design för kontaktinformationen */
+#contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Anpassa designen för kontaktinfo-sektionen */
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Stilsättning för varje kontaktinfo-item */
+.contact-item {
+    text-align: center;
+}
+
+/* Design för rubriken i varje kontaktinfo-item */
+.contact-item h3 {
+    color: #000000;
+}
+
+/* Stilsättning för texten i varje kontaktinfo-item */
+.contact-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* ---------- Stilsättning för portfoliodelen ---------- */
+
+/* Generell stilsättning för portfoliodelen */
+.portfolio-section {
+    font-family: 'Barlow', sans-serif;
+    margin: 20px auto;
+    background-color: rgb(220, 186, 243); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilsättning för varje projektsektion i portfoliodelen */
+.project-section {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(220, 186, 243);
+}
+
+/* Stilsättning för listan som håller projekten */
+#project-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Stilsättning för bilderna i portfoliodelen */
+.portfolio-section img {
+    width: 50%; /* Bilden kommer att ta 100% av förälderelementets bredd */
+    height: auto; /* Bibehåll proportionerna när bredden justeras */
+    border-radius: 8px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: block;
+    justify-content: space-around;
+}
+
+/* Design för varje container i portfoliodelen */
+.container, .container2, .container3 {
+    display: inline-block;
+    justify-content: column;
+    width: 60%;
+    margin: 20px;
+    max-height: 400px;
+    position: relative;
+}
+
+/* Stilsättning för knapparna i portfoliodelen */
+.btn, .btn2, .btn3 {
+    align-items: center;
+    width: 200px;
+    padding: 10px 0;
+    background: rgb(173, 200, 252);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+/* ---------- Stilsättning för popup-rutorna ---------- */
+
+/* Stilsättning för överlagret vid öppnande av popup-rutan */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(212, 18, 212), rgb(0, 89, 255)); 
+    opacity: .2; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Se till att dimman hamnar ovanpå övrigt innehåll */
+}
+
+/* Stilsättning för själva popup-rutan och dess varianter */
+.popup, .popup2, .popup3 {
+    max-width: 90%;
+    max-height: 90vh;
+    top: 20%;
+    background: #efdcff;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    position: relative;
+    z-index: 2; /* Se till att popup-rutan hamnar ovanpå dimman */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+/* Stilsättning för öppnade popup-rutor */
+.open-popup, .open-popup2, .open-popup3 {
+    width: auto;
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Stilsättning för bilder inuti popup-rutorna */
+.popup img, .popup2 img, .popup3 img {
+    width: 50%;
+    margin: auto; /* Centrera både horisontellt och vertikalt */
+    border-radius: 5%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilsättning för knapparna inne i popup-rutorna */
+.popup button, .popup2 button, .popup3 button {
+    width: 200px;
+    margin-top: 20px;
+    padding: 8px 0;
+    background: rgb(209, 190, 255);
+    color: rgb(0, 0, 0);
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query för mindre skärmar */
+@media screen and (max-width: 600px) {
+    .contact-info {
+        max-width: 100%; /* Justera bredden för kontaktinfo-sektionen på mindre skärmar */
+    }
+}
